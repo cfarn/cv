@@ -1,4 +1,8 @@
 /* style du cv */
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -6,14 +10,157 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: 18px;
+}
+
+.page {
+    margin: 0 auto;
+    width: 80vw; 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
 /* header */
 .titles {
-    height: 50vh;
+    min-height: 40vh;
+    width: 100%;
+    padding: 5vh 0;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: lightgray;
+}
+
+.title1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 5rem;
+    letter-spacing: 3px;
+    color: #5689e8;
+}
+
+.title2 {
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 3rem;
+    color: #4c5498;
+}
+
+.title2 span {
+    text-transform: lowercase;
 }
 
 /* main */
-.container {
-    margin: 0 auto;
-   width: 80vw; 
+.section_title {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #5689e8;
+    text-align: center;
+    margin: 30px 2.5rem;
+    padding: 5px 0;
 }
+
+.container, .aside {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    background-color: #f5dddd;
+    width: 50%;
+    order: 2;
+}
+
+.aside {
+    width: 40%;
+    order: 1;
+}
+
+.bloc {
+    padding: 20px;
+}
+
+.a1 {
+    order: 1;
+}
+.a2 {
+    order: 3;
+}
+.a3 {
+    order: 2;
+    font-style: normal;
+    color: #4c5498;
+}
+.a4 {
+    order: 4;
+}
+
+/* À propos */
+.bloc .txt {
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    color: #4c5498;
+    font-weight: 300;
+}
+
+.bloc .txt2 {
+    font-weight: 400;
+}
+
+/* Contact */
+.a3 ul {
+    list-style-type: none;
+}
+
+.a3 li {
+    line-height: 2rem;
+}
+
+.a3 a {
+    text-decoration: none;
+    color: #4c5498;
+}
+
+/* Compétences */
+.a2 h4 {
+    color: #5689e8;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.a2 ul, .a4 ul {
+    list-style-type: none;
+}
+
+.a2 li {
+    line-height: 2rem;
+    color: #4c5498;
+    padding-left: 20px;
+    font-weight: 400;
+}
+
+.a4 li {
+    line-height: 2rem;
+    color: #4c5498;
+    font-weight: 400;
+}
+
+
+
+.bleu {background-color: #4f759b;}
+.vert {background-color: #92c9b1;}
+.mauve {background-color: #5d5179;}
+.jaune {background-color: rgb(246, 246, 127);}
