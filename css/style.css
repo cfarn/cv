@@ -200,3 +200,34 @@ body {
     color: #4c5498;
     font-weight: 400;
 }
+
+/* Responsive */
+@media screen and (max-width: 1100px) {
+    .page {
+        display: block;
+        width: 100%;
+    }
+
+    .container, .aside {
+        width: 100%;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .section_title {
+        margin: 30px 0;
+    }
+
+    .title1 {
+        font-size: 3rem;
+    }
+
+    .title2 {
+        font-size: 1.8rem;
+    }
+
+    .section_title {
+        font-size: 1.5rem;
+    }
+}
